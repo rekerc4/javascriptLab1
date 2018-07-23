@@ -2,8 +2,9 @@
 
 let playChoice = prompt("Do you want to play a game?");
 let check = playChoice.toLocaleLowerCase().trim();
+let checker = check.replace(/\./g,'');
 
-if(check === 'yes' || check === 'y' || check === 'yeah' || check === 'sure' || check === 'ye'){
+if(checker === 'yes' || check === 'y' || check === 'yeah' || check === 'sure' || check === 'ye'){
     let userName = prompt("What is your name?")
     let grantHealth = 10; 
     let userHealth = 40; 
